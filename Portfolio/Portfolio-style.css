@@ -1,0 +1,397 @@
+*{
+    margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo img{
+    height: 85px;
+    width: 85px;
+    margin: 2px 250px 0px 0px;
+}
+.menu ul{
+    display: flex;
+    margin: 7px 60px 0px 0px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 30px;
+    font-weight: bold;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease;
+}
+.menu ul li a:hover{
+    color: #262b92;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+.header h1{
+    margin: 0px 20px 0px 0px;
+    font-size: 72px;
+    animation-name: effect;
+    animation-duration: 3s;
+    line-height: 76px;
+    animation-iteration-count: 1;
+}
+.headercol1 button{
+    height: 60px;
+    width: 180px;
+    margin: 25px 0px 0px 0px;
+    font-size: 20px;
+    color:black;
+    border: 2px solid #0C1172;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation-name: effect;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transition: all 0.3s linear;
+}
+.headercol1 button::before{
+    content: " ";
+    position: absolute;
+    width: 180px;
+    height: 0px;
+    background:linear-gradient(#7BC8FF,#0C1172);
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: all 0.3s linear;
+}
+.headercol1 button:hover{
+    color: aliceblue;
+}
+.headercol1 button:hover::before{
+    height: 60px;
+}
+.header p{
+    margin: 10px 0px 0px 0px;
+    font-size: 20px;
+    animation-name: effect;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.header img{
+    height: auto;
+    width: 580px;
+    margin-top: -130px;
+    margin-right: 40px;
+}
+
+@keyframes effect {    
+    0% {opacity: 0;}
+}
+span{
+    background:linear-gradient(#7BC8FF,#0C1172);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.abouth1{
+   text-align: center;
+   font-size: 50px;
+   margin-bottom: -45px;
+   position: relative;
+}
+.abouth1::after{
+    content: "";
+    position: absolute;
+    background:linear-gradient(#7BC8FF,#02086b);
+    width: 100px;
+    height: 4px;
+    margin-top: 70px;
+    margin-left: -170px;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+.about img{
+    height: auto;
+    width: 480px;
+}
+.about-text{
+    width: 550px;
+    margin-left: -50px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    font-size: 40px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-text p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.skills-container h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    position: relative;
+ }
+ .skills-container h1::after{
+     content: "";
+     position: absolute;
+     background:linear-gradient(#7BC8FF,#02086b);
+     width: 103px;
+     height: 4px;
+     margin-top: 70px;
+     margin-left: -160px;
+ }
+ .skills-container{
+    margin-bottom: 140px;
+    background-color:rgb(235, 234, 239);
+    padding-top: 30px;
+    padding-bottom: 8px;
+
+ }
+ .skills{
+    margin: 80px;
+    padding: 0 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+ }
+ .skill{
+    margin-bottom: 50px;
+ }
+ 
+ .skill-name{
+    margin: 0px 0 5px;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+ }
+.skill-bar{
+    height: 14px;
+    background-color: rgb(201, 186, 186);
+    border-radius: 3px;
+}
+.skill-per{
+    height: 15px;
+    background:linear-gradient(#7BC8FF,#02086b);
+    border-radius: 3px;
+    position: relative;
+    font-size: 18px;
+    animation: fillbars 3.7s 1 ;
+}
+@keyframes fillbars {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+.portfolio-container h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.portfolio-container h1::after{
+    content: "";
+     position: absolute;
+     background:linear-gradient(#7BC8FF,#02086b);
+     width: 120px;
+     height: 4px;
+     margin-top: 70px;
+     margin-left: -230px;
+}
+.portfolio{
+    margin: 80px 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.portfolio button{
+    height: 40px;
+    width: 130px;
+    margin-top: 10px;
+    border: none;
+    background-color: #0C1172;
+}
+.portfolio button a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.portfolio1{
+    position: relative;
+    overlay:hidden;
+}
+.portfolio2{
+    position: relative;
+    overlay:hidden;
+}
+.portfolio3{
+    position: relative;
+    overlay:hidden;
+}
+.content-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.content-box::before,.content-box::after{
+    content: "";
+    width: 95%;
+    height: 47%;
+    background-color: rgb(109, 112, 153);
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.content-box::before{
+    top: -20%;
+}
+.content-box::after{
+    bottom: -20%;
+}
+.content-box:hover::before{
+    top: 3%;
+    opacity: 0.8;
+}
+.content-box:hover::after{
+    bottom: 3%;
+    opacity: 0.8;
+}
+.content{
+    color: white;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.content-box:hover .content{
+    opacity: 1;
+}
+.contact h1{
+    margin: 10px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.contact-container h1::after{
+    content: "";
+     position: absolute;
+     background:linear-gradient(#7BC8FF,#02086b);
+     width: 110px;
+     height: 4px;
+     margin-top: 70px;
+     margin-left: -200px;
+}
+.contact{
+    text-align: center;
+}
+.contact-main{
+    display: flex;
+    justify-content: space-around;
+    background:linear-gradient(#7BC8FF,#6274fa);
+    margin: 50px 80px 0px 80px;
+    border-radius: 40px;
+    padding-bottom: 20px;
+}
+.contact-content{
+    margin-top: 50px;
+}
+.info{
+    display: flex;
+    margin-top: 20px;
+}
+.info img{
+    margin-right: 10px;
+}
+.name input{
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 14px;
+    background-color: rgb(228, 237, 245);
+}
+.email input{
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    padding-left: 14px;
+    background-color: rgb(228, 237, 245);   
+}
+.message textarea{
+    width: 500px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 13px;
+    background-color: rgb(228, 237, 245); 
+}
+button{
+    background-color:#02086b;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    width: 500px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+button:hover{
+    background-color: #09049f79;
+}
+.copyright{
+    background-color: rgb(255, 251, 251);
+}
+.copyright p{
+    margin: 15px 0px;
+    text-align: center;
+}
