@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav{
+    height: 70px;
+    width: auto;
+    background-color:rgb(251, 121, 40);
+    display: flex;
+    justify-content: space-between;
+}
+.logo h2{
+    color: white;
+    margin: 20px 100px;
+}
+.menu ul{
+    display: flex;
+    margin-right: 70px;
+}
+.menu ul li{
+    list-style: none;
+    padding: 25px;
+    transition: all 0.5s linear;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li:hover{
+    background-color: rgb(150, 75, 14);
+    border-radius: 10px;
+}
+.header-container{
+    background: rgba(0, 0, 0, 0.4) url(ivan-torres-MQUqbmszGGM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1368px 700px;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    height: 600px;
+}
+.header{
+    padding: 100px;
+    color: aliceblue;
+}
+.header h1{
+    width: 480px;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.header p{
+    width: 500px;
+    font-size: 16px;
+}
+button{
+    color: white;
+    background-color: rgb(251, 121, 40);
+    height: 46px;
+    width: 180px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+button:hover{
+    background-color: rgb(247, 142, 72);
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 70px;
+}
+.aboutimg img{
+    border-radius: 8px;
+}
+.abouttxt{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 550px;
+}
+span{
+    color: rgb(251, 121, 40);
+}
+.abouttxt h2{
+    font-size: 40px;
+    margin-bottom: 14px;
+}
+.ingredient-container{
+    background-color: rgb(251, 121, 40);
+}
+.ingredient{
+    text-align: center;
+}
+.ingredient h2{
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+.ingredienttxt p{
+    color: white;
+    margin: 10px 280px;
+    padding-bottom: 10px;
+    
+}
+.ingredientimgs{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 290px;
+    padding-bottom: 50px;
+}
+.img1 img{
+    border: solid 10px white;
+}
+.img1 h4{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.img2 img{
+    border: solid 10px white;
+}
+.img2 h4{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.img3 img{
+    border: solid 10px white;
+}
+.img3 h4{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.share-food{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 70px;
+}
+.share-foodimg img{
+    border-radius: 8px;
+}
+.share-foodtxt{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 550px;
+}
+span{
+    color: rgb(251, 121, 40);
+}
+.share-foodtxt h2{
+    font-size: 40px;
+    margin-bottom: 14px;
+}
+
+
+.items-container{
+    background-color: rgb(252, 226, 214);
+}
+.items{
+    padding: 40px 0px;
+}
+.items h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.items-list{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 120px;
+}
+.item1 img,.item2 img,.item3 img,.item4 img{
+    border: solid 6px white;
+}
+.item1 p, .item2 p, .item3 p, .item4 p{
+    font-size: 20px;
+}
+.footer-container{
+    background-color: rgb(251, 121, 40);
+    padding: 30px;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 50px;
+    color: white;
+}
+.footer-list::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(208, 208, 208);
+    border: none;
+    width: 900px;
+    height: 1px;
+    margin-top: 160px;
+}
+.footerco4{
+    cursor: pointer;
+}
+.copyright{
+    background-color: rgb(251, 121, 40);
+}
+.copyright p{
+    padding: 45px 0px 10px 0px;
+    text-align: center;
+    color: white;
+}
